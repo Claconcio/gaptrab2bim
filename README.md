@@ -27,9 +27,9 @@ Acesse um navegador comum e entre no endereço informado.
 
 Nomes dos contribuidores e informações de contato:
 
-- Carlos Miranda - @claconcio <carlosmirandaum@gmail.com>
-- João Lanjoni - @lanjoni <joaoaugustolanjoni@gmail.com>
-- Luis Magri - @luismagri
+- Carlos Miranda - [@claconcio](https://github.com/claconcio) <carlosmirandaum@gmail.com>
+- João Lanjoni - [@lanjoni](https://github.com/lanjoni) <joaoaugustolanjoni@gmail.com>
+- Luis Magri - [@luismagri](https://github.com/luismagri)
 
 ## Versões
 
