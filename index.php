@@ -1,6 +1,6 @@
 <?php
 /**
- * Sistema de controle de Estoque *Estoca Software*
+ * Sistema de controle de supermercado *Market Software*
  * Iniciado em: 2023-05-29
  * 
  * @author claconcio <carlosmirandaum@gmail.com>
@@ -25,7 +25,23 @@ if($path == '/') {
     if (in_array($fileToInclude, $existentFiles)) {
         require_once(sprintf('./pages/%s.php', $fileToInclude));
     } else {
-        require_once('./pages/404.php');
+        $fileToInclude = substr($path, 1);
+        $fileToInclude = str_replace('editar/', '', $fileToInclude);
+
+        $existentFiles = glob('./pages/editar/*.php');
+        $existentFiles = array_map(fn ($file) => str_replace(['./pages/editar/', '.php'], '', $file), $existentFiles);
+
+        $parameters = str_replace('cliente', '', $fileToInclude);
+
+        if ($parameters != ""){
+            $fileToInclude = strstr($fileToInclude, '?', true);
+        }
+
+        if (in_array($fileToInclude, $existentFiles)) { 
+            require_once(sprintf('./pages/editar/%s.php', $fileToInclude));
+        } else {
+            require_once('./pages/404.php');
+        }
     }
 }
 
