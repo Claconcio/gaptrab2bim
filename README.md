@@ -1,10 +1,10 @@
-# Estoca Software
+# Market Software
 
 Este é um trabalho para a disciplina de Gestão Ágil de Projetos do Terceiro Semestre do curso de Bacharelado em Sistemas de Informação do IFSP Campus Votuporanga.
 
 ## Descrição
 
-Neste trabalho realizaremos o controle de estoque dentro de um supermercado, possibilitando a administração de itens dentro do sistema.
+Neste trabalho realizaremos o controle de vendas dentro de um supermercado, possibilitando a administração de itens dentro do sistema.
 
 ## Preparando o ambiente
 
