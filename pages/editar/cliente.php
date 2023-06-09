@@ -114,6 +114,17 @@ for ($i = 1; $i < $qtd_cliente; $i++){
   <center>
       <button type="submit" class="btn btn-primary">Editar</button>
   </center>
+  <?php
+    if (isset($_SESSION['cliente_existe'])):
+  ?>
+      <br/><br/>
+      <div class="alert alert-warning" role="alert">
+          Cliente <b>existe</b>. Edição não pode ser realizada!
+      </div>
+  <?php
+      endif;
+      unset($_SESSION['cliente_existe'])
+  ?>
 </form>
 </div>
 <script>
