@@ -49,6 +49,17 @@ for ($i = 1; $i < $qtd_produto; $i++){
   <center>
       <button type="submit" class="btn btn-primary">Editar</button>
   </center>
+  <?php
+    if (isset($_SESSION['produto_existe'])):
+  ?>
+      <br/><br/>
+      <div class="alert alert-warning" role="alert">
+          Produto <b>existe</b>. Edição não pode ser realizada!
+      </div>
+  <?php
+      endif;
+      unset($_SESSION['produto_existe'])
+  ?>
 </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
