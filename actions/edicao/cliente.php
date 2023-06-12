@@ -7,9 +7,11 @@ for ($i = 1; $i < $qtd_cliente; $i++){
     // Verificação de clientes existentes
     if ($_SESSION['cliente'][$i]['cpf'] == $_POST['cpf'] &&
         $_SESSION['cliente'][$i]['email'] == $_POST['email']){
-            $_SESSION['cliente_existe'] = true;
-            header("Location: /editar/cliente?id=$id");
-            exit();
+            if ($id != $_SESSION['cliente'][$i]['id']) {
+                $_SESSION['cliente_existe'] = true;
+                header("Location: /editar/cliente?id=$id");
+                exit();
+            }
         }
 
     if ($id == $_SESSION['cliente'][$i]['id']){
