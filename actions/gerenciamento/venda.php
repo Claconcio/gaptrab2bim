@@ -11,6 +11,10 @@
     </thead>
     <tbody>
     <?php
+    if (!isset($_SESSION['qtd_venda'])){
+        $_SESSION['qtd_venda'] = 1;
+    }
+
     $qtd_venda = $_SESSION['qtd_venda'];
     $totalizador = 0;
 
