@@ -17,7 +17,7 @@
                 $_SESSION['qtd_produto'] = 1;
             }
 
-            $qtd_produto = $_SESSION['qtd_produto']; 
+            $qtd_produto = $_SESSION['qtd_produto'];
 
             for ($i = 1; $i < $qtd_produto; $i++){
                 if (!isset($_SESSION['produto'][$i])){
