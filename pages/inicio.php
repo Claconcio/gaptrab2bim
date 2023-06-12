@@ -5,7 +5,7 @@
     </div>
     <div class="overflow-hidden">
       <div class="container px-5">
-        <img src="https://thumbs.dreamstime.com/b/corredor-do-supermercado-33839866.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+        <img src="https://magis5.com.br/wp-content/uploads/2020/12/controle_de_estoque-scaled.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
       </div>
     </div>
   </div>

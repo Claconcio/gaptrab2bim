@@ -1,0 +1,12 @@
+Nome do Produto: computador
+Categoria: eletronicos
+Galpão: galpaoA
+
+Nome do Produto: a
+Categoria: vestuario
+Galpão: galpaoA
+
+Nome do Produto: testeee
+Categoria: alimentos
+Galpão: galpaoC
+
